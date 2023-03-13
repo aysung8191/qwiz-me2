@@ -1,35 +1,32 @@
 import {useState} from 'react';
 
-export default function NewFlashcardForm({handleSubmit}) {
-    const [flashcards, setFlashcards] = useState([])
+export default function NewFlashcardForm({createFlashcard}) {
+    const [formData, setFormData] = useState({
+        question: "",
+        answer: ""
+    });
 
-    const handleFlashcardChange = (event) => {
-        setFlashcards(event.target.value)
-    };
+    function handleChange(evt) {
+        const newFormData = {...formData, [evt.target.name]: evt.target.value};
+        setFormData(newFormData);
+    }
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-        handleSubmit(event, flashcards.question);
-        setFlashcards('');
-    };
-    
-    // const handleCancelClick = () => {
-    //     if (edit) {
-    //         handleCancelEdit();
-    //     } else {
-    //         setFlashcards('');
-    //     }
-    // }
+    function handleSubmit(e) {
+        e.preventDefault()
+        createFlashcard(formData)
+    }
 
     return (
         <>
             <h3>Add New Flashcard</h3>
-            <form onSubmit={handleFormSubmit}>
-                <label>Question: <input type="text" value={flashcards} onChange={handleFlashcardChange} />
-                </label>
-                <label>Answer: <input type="text" value={flashcards} /></label>
+            <form onSubmit={handleSubmit}>
+                <label>Question: </label>
+                <input type="text" name="question" onChange={handleChange}/>
+                <label>Answer: </label>
+                <input type="text" name = "answer" onChange={handleChange}/>
                 <button>Add Flashcard</button>
             </form>
+            <h4>{formData.question} is {formData.answer}</h4>
         </>
     )
 }

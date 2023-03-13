@@ -1,24 +1,25 @@
 import {useState, useEffect} from 'react';
+import * as flashcardsAPI from '../../utilities/flashcards-api'
 import NewFlashcardForm from '../../components/NewFlashcardForm/NewFlashcardForm';
 import FlashcardCard from '../../components/FlashcardCard/FlashcardCard';
 
-export default function FlashcardSet({user, flashcards, setFlashcards}) {
+export default function FlashcardSet({user}) {
     const [userFlashcards, setUserFlashcards] = useState([]);
 
-    const handleSubmit = (event, content) => {
-        event.preventDefault();
-        const newUserFlashcard = {
-            
-        }
+    async function createFlashcard(cardData) {
+        cardData.user = user._id
+        const card = await flashcardsAPI.createFlashcard(cardData)
+        setUserFlashcards([...userFlashcards, card])
     }
 
     return (
         <div>
             <br />
-            <NewFlashcardForm user={user} flashcards={flashcards} setFlashcards={setFlashcards} />
+            <NewFlashcardForm createFlashcard={createFlashcard} />
+            <br />
+            <h2>My Flashcard Sets</h2>
             {userFlashcards.length > 0 ? (
                 <>
-                    <h2>My Flashcard Sets</h2>
                     {userFlashcards.map((userFlashcard, idx) => (
                         <FlashcardCard userFlashcard={userFlashcard} key={idx} />
                     ))}
@@ -29,3 +30,5 @@ export default function FlashcardSet({user, flashcards, setFlashcards}) {
         </div>
     )
 }
+
+//.find

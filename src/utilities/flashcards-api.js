@@ -1,8 +1,8 @@
 import sendRequest from './send-request'
-const BASE_URL='api/flashcards'
+const BASE_URL='/api/flashcards'
 
-export function createFlashcard(flashcardData) {
-    return sendRequest(BASE_URL, 'POST', flashcardData)
+export async function createFlashcard(flashcardData) {
+    return await sendRequest(BASE_URL, 'POST', flashcardData)
 }
 
 export function updateFlashcard(flashcardId, flashcardData) {
