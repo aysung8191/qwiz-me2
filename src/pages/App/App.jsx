@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { getUser } from '../../utilities/users-service'
 import AuthPage from '../AuthPage/AuthPage';
 import Flashcard from '../../components/Flashcard/Flashcard';
-import FlashcardList from '../../components/FlashcardList/FlashcardList';
+import FlashcardSets from '../../components/FlashcardSets/FlashcardSets';
 import Trivia from '../../components/Trivia/Trivia';
 import NavBar from '../../components/NavBar/NavBar'
 import axios from 'axios'
@@ -47,7 +47,7 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             <Route path="/flashcards/new" element={<Flashcard />} />
-            <Route path="/flashcards" element={<FlashcardList />} />
+            <Route path="/flashcards" element={<FlashcardSets />} />
             <Route path="/flashcards/trivia" element={<Trivia className="container" flashcards={flashcards}/>} />
           </Routes>
         </>

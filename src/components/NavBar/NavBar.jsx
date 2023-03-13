@@ -10,13 +10,13 @@ export default function NavBar({ user, setUser }) {
 
     return (
         <nav>
+            Welcome, {user.name}
+            &nbsp; | &nbsp;
             <Link to="/flashcards/trivia">Trivia</Link>
             &nbsp; | &nbsp;
             <Link to="/flashcards">Flashcard List</Link>
             &nbsp; | &nbsp;
-            <Link to="/flashcards/new">New Flashcard</Link>
-            &nbsp;&nbsp; Welcome, {user.name}
-            &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+            <Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>
     )
 }
