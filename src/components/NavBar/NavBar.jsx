@@ -14,7 +14,7 @@ export default function NavBar({ user, setUser }) {
             &nbsp; | &nbsp;
             <Link to="/flashcards/trivia">Trivia</Link>
             &nbsp; | &nbsp;
-            <Link to="/flashcards">Flashcard List</Link>
+            <Link to="/flashcards/sets">Flashcard Sets</Link>
             &nbsp; | &nbsp;
             <Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>
