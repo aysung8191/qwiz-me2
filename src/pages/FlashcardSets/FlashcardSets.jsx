@@ -27,15 +27,17 @@ export default function FlashcardSet({user}) {
             <NewFlashcardForm createFlashcard={createFlashcard} />
             <br />
             <h2>My Flashcards</h2>
-            {userFlashcards.length > 0 ? (
-                <>
-                    {userFlashcards.map((userFlashcard, idx) => (
-                        <Flashcard flashcard={userFlashcard} key={idx} />
-                    ))}
-                </>
-            ) : (
-                <h2>No Flashcards Created Yet!</h2>
-            )}
+            <div className="card-grid">
+                {userFlashcards.length > 0 ? (
+                    <>
+                        {userFlashcards.map((userFlashcard, idx) => (
+                            <Flashcard flashcard={userFlashcard} key={idx} />
+                        ))}
+                    </>
+                ) : (
+                    <h2>No Flashcards Created Yet!</h2>
+                )}
+            </div>
         </>
     )
 }
