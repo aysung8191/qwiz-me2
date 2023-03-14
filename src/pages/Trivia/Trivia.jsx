@@ -1,5 +1,5 @@
 import React from 'react'
-import Flashcard from '../Flashcard/Flashcard'
+import Flashcard from '../../components/Flashcard/Flashcard'
 import {useEffect} from 'react'
 import axios from 'axios'
 

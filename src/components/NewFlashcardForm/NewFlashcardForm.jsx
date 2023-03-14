@@ -26,7 +26,6 @@ export default function NewFlashcardForm({createFlashcard}) {
                 <input type="text" name = "answer" onChange={handleChange}/>
                 <button>Add Flashcard</button>
             </form>
-            <h4>{formData.question} is {formData.answer}</h4>
         </>
     )
 }

@@ -27,11 +27,15 @@ export default function Flashcard({ flashcard }) {
         > 
             <div className="front" ref={frontEl}>
                 {flashcard.question}
-                <div className="flashcard-options">
-                    {flashcard.options.map(option => {
-                        return <div className="flashcard-option">{option}</div>
-                    })}
-                </div>
+                {
+                    flashcard.options ? 
+                    <div className="flashcard-options">
+                        {flashcard.options.map(option => {
+                            return <div className="flashcard-option">{option}</div>
+                        })}
+                    </div>
+                    : null
+                }
             </div>
             <div className="back" ref={backEl}>{flashcard.answer}</div>
         </div>

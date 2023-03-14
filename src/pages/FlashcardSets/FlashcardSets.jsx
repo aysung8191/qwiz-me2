@@ -1,7 +1,9 @@
 import {useState, useEffect} from 'react';
 import * as flashcardsAPI from '../../utilities/flashcards-api'
+import * as setsAPI from '../../utilities/sets-api'
 import NewFlashcardForm from '../../components/NewFlashcardForm/NewFlashcardForm';
 import FlashcardCard from '../../components/FlashcardCard/FlashcardCard';
+import Flashcard from '../../components/Flashcard/Flashcard'
 
 export default function FlashcardSet({user}) {
     const [userFlashcards, setUserFlashcards] = useState([]);
@@ -10,6 +12,11 @@ export default function FlashcardSet({user}) {
         cardData.user = user._id
         const card = await flashcardsAPI.createFlashcard(cardData)
         setUserFlashcards([...userFlashcards, card])
+    }
+
+    async function getFlashcards() {
+        const userFlashcards = user ? await setsAPI.getFlashcards() : []
+        setUserFlashcards(userFlashcards)
     }
 
     return (
@@ -21,7 +28,7 @@ export default function FlashcardSet({user}) {
             {userFlashcards.length > 0 ? (
                 <>
                     {userFlashcards.map((userFlashcard, idx) => (
-                        <FlashcardCard userFlashcard={userFlashcard} key={idx} />
+                        <Flashcard flashcard={userFlashcard} key={idx} />
                     ))}
                 </>
             ) : (
@@ -30,5 +37,3 @@ export default function FlashcardSet({user}) {
         </div>
     )
 }
-
-//.find
