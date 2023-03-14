@@ -26,6 +26,7 @@ export default function App() {
             <Route path="/flashcards/trivia" element={<Trivia className="container" flashcards={flashcards} setFlashcards={setFlashcards} />} />
             <Route path="/flashcards/chucknorris" element={<ChuckJokes flashcards={flashcards} setFlashcards={setFlashcards} /> } />
           </Routes>
+          {/* add homepage here  */}
         </>
         :
         <AuthPage setUser={setUser} />

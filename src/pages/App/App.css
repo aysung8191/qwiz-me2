@@ -145,20 +145,27 @@ body  {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
-  width: 300px;
+  width: 30%;
   padding: 5px;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.joke-button {
+  position: relative;
+  top: -5%;
 }
 
 .joke-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 40px;
   background-color: white;
-  height: 400px;
+  height: 500px;
   background-image: url("../../logos/chucknorrislogo.JPG");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 100px;
   margin-top: 40px;
+  position: relative;
 }
