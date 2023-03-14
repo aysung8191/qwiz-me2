@@ -12,9 +12,11 @@ export default function NavBar({ user, setUser }) {
         <nav>
             Welcome, {user.name}
             &nbsp; | &nbsp;
+            <Link to="/flashcards/sets">My Flashcards</Link>
+            &nbsp; | &nbsp;
             <Link to="/flashcards/trivia">Trivia</Link>
             &nbsp; | &nbsp;
-            <Link to="/flashcards/sets">My Flashcards</Link>
+            <Link to="/flashcards/chucknorris">Chuck Norris Jokes</Link>
             &nbsp; | &nbsp;
             <Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>
