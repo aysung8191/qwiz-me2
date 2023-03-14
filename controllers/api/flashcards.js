@@ -16,5 +16,6 @@ async function index(req, res) {
     if (req.user) {
         flashcards = await Flashcard.find({user: req.user._id})
     }
+    console.log(flashcards)
     res.json(flashcards)  
 }
