@@ -16,11 +16,13 @@ export default function ChuckJokes() {
 
     return (
     <>
+        <div className="joke-container">
             <br />
             <button onClick={getJoke}>Get Joke</button>
             <br /><br />
-        <div>
-            {joke}
+            <div className="joke">
+                {joke}
+            </div>
         </div>
     </>
     )
