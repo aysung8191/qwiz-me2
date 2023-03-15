@@ -54,6 +54,7 @@ export default function Trivia({ flashcards, setFlashcards }) {
 
   return (
     <>
+      <br />
       <form className="header" onSubmit={handleSubmit}>
         <div className="form-group">
           <label id="category-label" htmlFor="category">Category</label>

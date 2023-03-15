@@ -6,8 +6,10 @@
 }
 
 body  {
-  background-color: #3264a8;
+  background-color: #448EF3;
+  background-image: linear-gradient(to top, #0B1625 0%, #448EF3 100%);
   margin: 0;
+  background-repeat: no-repeat;
 }
 
 h2, h3 {
@@ -25,6 +27,8 @@ nav {
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
 nav a {
@@ -47,6 +51,10 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+
+p {
+  font-weight: bold;
 }
 
 select#category {
@@ -158,12 +166,10 @@ select#category {
 }
 
 .flashcard-form {
-  /* width: 900px; */
   display: flex;
   justify-content: center;
   justify-self: center;
   align-items: center;
-  /* align-self: center; */
   position: relative;
   color: white;
   border: 2px solid white;
@@ -203,6 +209,78 @@ select#category {
   flex-wrap: wrap;
   background-color: white;
   padding: 0 1.5rem;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#home-bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.home-left-card {
+  height: 30vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  background-image: url("../../logos/leftcardimage.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.home-middle-card {
+  height: 30vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  background-image: url("../../logos/midcardimage.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.home-right-card {
+  height: 30vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  background-image: url("../../logos/rightcardimage.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.home-main-card {
+  height: 50vh;
+  border: 2px solid black;
+  background: white;
+  border-radius: 10px;
+  background-image: url("../../logos/homepagebackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.home-main-left-content {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  width: 25vh;
+}
+
+.home-main-right-content {
+  position: relative;
+  top: 10%;
+  right: -69%;
+  width: 25vh;
 }
 
 .joke {
@@ -234,6 +312,7 @@ select#category {
   margin-top: 40px;
   position: relative;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  border: 2px solid black;
 }
 
 .logo {
