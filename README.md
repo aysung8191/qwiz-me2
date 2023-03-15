@@ -9,7 +9,7 @@
 ## Site Overview:
 Qwiz.me is a site where students and learners of all kinds can come to improve their studying and memorization skills! Users can create flashcards and sets to run through and *quiz* themselves. Similar to Quizlet, users are free to choose any language, subject, etc., to create their own digital flashcard sets and master concepts faster.
 
-Additionally, users can generate random trivia questions or jokes whenever they need a much-deserved break from studying - all pulled from public APIs (Open Trivia DB API & ChuckNorris.io API)
+Additionally, users can generate random trivia questions or jokes whenever they need a much-deserved break from studying - all pulled from public APIs (Open Trivia DB API & ChuckNorris.io API) Start studying here: https://qwiz-me2.herokuapp.com/
 
 ## Users can create their own flashcards and sets to run through!
 ![image](https://user-images.githubusercontent.com/119904805/225217625-af7054af-99b7-423f-b237-53f88e5a3f4e.png)
