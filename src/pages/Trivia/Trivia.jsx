@@ -69,7 +69,7 @@ export default function Trivia({ flashcards, setFlashcards }) {
           <input type="number" id="amount" min="1" step="1" defaultValue={20} ref={amountEl} />
         </div>
         <div className="form-group">
-            <button className="btn">Generate Questions</button>
+            <button className="trivia-btn">Generate Questions</button>
         </div>
       </form>
       <br />

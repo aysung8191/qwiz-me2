@@ -1,11 +1,11 @@
 /* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
+  --tan-1: #DDDDD7;
   --tan-2: #E7E2DD;
   --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
+  --tan-4: #448EF3;
+  --orange: #448EF3;
   --text-light: #968c84;
   --text-dark: #615954;
 }
@@ -29,6 +29,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h4 {
+  font-size: 30px;
+  color: white;
 }
 
 #root {

@@ -299,6 +299,7 @@ select#category {
 .joke-button {
   position: relative;
   top: -5%;
+  background-color: #ed5d20;
 }
 
 .joke-container {
