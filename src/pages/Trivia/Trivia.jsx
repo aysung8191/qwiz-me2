@@ -56,7 +56,7 @@ export default function Trivia({ flashcards, setFlashcards }) {
     <>
       <form className="header" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="category">Category</label>
+          <label id="category-label" htmlFor="category">Category</label>
           <select id="category" ref={categoryEl}>
             {categories.map(category => {
               return <option value={category.id} key={category.id}>{category.name}</option>
@@ -64,7 +64,7 @@ export default function Trivia({ flashcards, setFlashcards }) {
           </select>
         </div>
         <div className="form-group">
-          <label htmlFor="amount">Number of Questions</label>
+          <label id="questions-number-label" htmlFor="amount">Number of Questions</label>
           <input type="number" id="amount" min="1" step="1" defaultValue={20} ref={amountEl} />
         </div>
         <div className="form-group">

@@ -19,12 +19,12 @@ export default function NewFlashcardForm({createFlashcard}) {
     return (
         <>
             <h3>Add a New Flashcard</h3>
-            <form onSubmit={handleSubmit}>
-                <label>Question: </label>
+            <form className="flashcard-form" onSubmit={handleSubmit}>
+                <label id="question-label">Question: </label>
                 <input type="text" name="question" onChange={handleChange}/>
-                <label>Answer: </label>
+                <label id="answer-label">Answer: </label>
                 <input type="text" name = "answer" onChange={handleChange}/>
-                <button>Add Flashcard</button>
+                <button id="form-button">Add Flashcard</button>
             </form>
         </>
     )
