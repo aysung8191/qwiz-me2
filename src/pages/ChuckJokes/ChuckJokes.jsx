@@ -18,7 +18,7 @@ export default function ChuckJokes() {
     <>
         <div className="joke-container">
             <br />
-            <button className="joke-button" onClick={getJoke}>Get Joke</button>
+            <button className="joke-button" onClick={getJoke}>Chuck Says Click Here</button>
             <br /><br />
             <div className="joke">
                 {joke}

@@ -8,6 +8,7 @@ import FlashcardSets from '../FlashcardSets/FlashcardSets';
 import Trivia from '../Trivia/Trivia';
 import NavBar from '../../components/NavBar/NavBar'
 import ChuckJokes from '../ChuckJokes/ChuckJokes'
+import HomePage from '../HomePage/HomePage'
 
 export default function App() {
   const [ user, setUser ] = useState(getUser())
@@ -21,12 +22,12 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
+            <Route path='' element={<HomePage />} />
             <Route path="/flashcards/new" element={<Flashcard />} />
             <Route path="/flashcards/sets" element={<FlashcardSets user={user} userFlashcards={userFlashcards} setUserFlashcards={setUserFlashcards}/> } />
             <Route path="/flashcards/trivia" element={<Trivia className="container" flashcards={flashcards} setFlashcards={setFlashcards} />} />
             <Route path="/flashcards/chucknorris" element={<ChuckJokes flashcards={flashcards} setFlashcards={setFlashcards} /> } />
           </Routes>
-          {/* add homepage here  */}
         </>
         :
         <AuthPage setUser={setUser} />

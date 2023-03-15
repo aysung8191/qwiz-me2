@@ -10,15 +10,26 @@ export default function NavBar({ user, setUser }) {
 
     return (
         <nav>
-            Welcome, {user.name}
-            &nbsp; | &nbsp;
-            <Link to="/flashcards/sets">My Flashcards</Link>
-            &nbsp; | &nbsp;
-            <Link to="/flashcards/trivia">Trivia</Link>
-            &nbsp; | &nbsp;
-            <Link to="/flashcards/chucknorris">Chuck Norris Jokes</Link>
-            &nbsp; | &nbsp;
-            <Link to="" onClick={handleLogOut}>Log Out</Link>
+            <div className="logo">
+                <Link to="">Qwiz.me</Link>
+            </div>
+            <ul>
+                <li>
+                    <Link to="">Welcome, {user.name}</Link>
+                </li>
+                <li>
+                    <Link to="/flashcards/sets">My Flashcards</Link>
+                </li>
+                <li>
+                    <Link to="/flashcards/trivia">Trivia</Link>
+                </li>
+                <li>
+                    <Link to="/flashcards/chucknorris">Chuck Norris Jokes</Link>
+                </li>
+                <li>
+                    <Link to="" onClick={handleLogOut}>Log Out</Link>
+                </li>
+            </ul>
         </nav>
     )
 }
