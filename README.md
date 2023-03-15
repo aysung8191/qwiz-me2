@@ -1,4 +1,4 @@
-![sitelogo](https://user-images.githubusercontent.com/119904805/225219134-9ff4da48-5ebf-4fde-ac06-2e21b50d0a0a.JPG)
+![sitelogo](https://user-images.githubusercontent.com/119904805/225250185-20af616a-7aaf-452b-80dc-80b0a37b62e2.JPG)
 
 # Qwiz.me
 
