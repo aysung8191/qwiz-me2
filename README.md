@@ -7,6 +7,8 @@
 **Technologies Used:** JavaScript, React, Mongoose, MongoDB, Express, Node, CSS, Open Trivia DB API & ChuckNorris.io API
 
 ## Site Overview:
+![image](https://github.com/aysung8191/qwiz-me2/assets/119904805/d6f892bb-b8de-4092-bb94-90852ddb9e4c)
+
 Qwiz.me is a site where students and learners of all kinds can come to improve their studying and memorization skills! Users can create flashcards and sets to run through and *quiz* themselves. Similar to Quizlet, users are free to choose any language, subject, etc., to create their own digital flashcard sets and master concepts faster.
 
 Additionally, users can generate random trivia questions or jokes whenever they need a much-deserved break from studying - all pulled from public APIs (Open Trivia DB API & ChuckNorris.io API) Start studying here: https://qwiz-me3.herokuapp.com/
@@ -21,8 +23,6 @@ Additionally, users can generate random trivia questions or jokes whenever they 
 ![scr2](https://user-images.githubusercontent.com/119904805/225218178-c123fbc3-efd0-48fc-88a9-00cf73afea11.JPG)
 
 ## Next Steps:
-* Allow users to edit and delete flashcards they've already created
-* Allow users to create and add flashcards to sets
 * Allow users to see sets other users in the community have already created and used
 * Allow users to leave a rating and a review on other users' sets 
 * Allow users to search and filter through their list of created flashcards (i.e. category, created date, etc.)
